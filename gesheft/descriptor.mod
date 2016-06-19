@@ -1,0 +1,9 @@
+name="G.E.S.H.E.F.T."
+path="mod/gesheft/"
+tags={
+	"Fixes"
+	"Technologies"
+	"Historical"
+	"Military"
+}
+supported_version="1.0.*"
