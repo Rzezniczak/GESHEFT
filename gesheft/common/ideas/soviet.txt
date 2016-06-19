@@ -660,6 +660,8 @@ ideas = {
 
 		SOV_lavrentiy_beria = {
 			
+			picture = generic_army_europe_2
+			
 			allowed = {
 				original_tag = SOV
 			}

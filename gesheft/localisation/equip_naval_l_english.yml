@@ -454,7 +454,7 @@
  SOV_SH_battleship_2:0 "Project 23bis"
  SOV_SH_battleship_2_desc:0 "The Project 23bis-class battleships were a modified and improved version of the previous Sovetsky Soyuz-class (Project 23). Compared to their predecessors, they carried four triple turrets of the same 406mm caliber cannons, thickened belt armor, a revised layout of secondary guns, and stronger AA armament."
  SOV_carrier_1:0 "Komsomolets Class"
- SOV_carrier_1_desc:0 "The aircraft carrier converted from the training ship "Komsomolets". Future spacecraft parameters must be had: the displacement of 12 000 tons, speed of 15 knots; Air Group 26 fighters and 16 attack aircraft; armament: eight two-gun caliber 102 mm units and two pyatistvolnye caliber 40 mm. According to its characteristics, this project reminds entered into operation in 1924, the British aircraft carrier "Hermes", at a certain similarity in appearance."
+ SOV_carrier_1_desc:0 "An aircraft carrier converted from the training ship "Komsomolets". Intended parameters were: displacement of 12 000 tons, speed of 15 knots; an Air Group consisting of 26 fighters and 16 attack aircraft; armament: eight twin 102mm guns and two quintuple 40 mm guns. According to its characteristics, this project is similar with the 1924 British aircraft carrier "Hermes" in appearance."
  SOV_carrier_2:0 "Project 71"
  SOV_carrier_2_desc:0 "The Project 71 carriers were designed in the mid-to-late 1930's. They were planned to provide air cover for the new surface fleets Stalin ordered in his plan. Two ships were planned that would displace around 30,000 tons, have strong AA armament, good armor, and an adequate air group. The German invasion caused the cancellation of construction for these vessels."
  SOV_carrier_3:0 "Project 72"
