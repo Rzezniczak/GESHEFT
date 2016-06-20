@@ -82,7 +82,7 @@ equipments = {
 		archetype = medium_tank_equipment
 		parent = light_tank_equipment_1
 		priority = 10
-		visual_level = 1
+		visual_level = 0
 
 		#Misc Abilities
 		maximum_speed = 12
@@ -206,7 +206,7 @@ equipments = {
 	modern_tank_equipment_1 = {
 		archetype = medium_tank_equipment
 		priority = 170
-		visual_level = 0
+		visual_level = 2
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -322,7 +322,7 @@ equipments = {
 		parent = light_tank_artillery_equipment_1
 		family = light_tank_equipment_2
 		priority = 20
-		visual_level = 1
+		visual_level = 0
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -411,7 +411,7 @@ equipments = {
 	modern_tank_artillery_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
 		priority = 180
-		visual_level = 0
+		visual_level = 2
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -526,7 +526,7 @@ equipments = {
 		parent = light_tank_destroyer_equipment_1
 		family = light_tank_equipment_2
 		priority = 40
-		visual_level = 1
+		visual_level = 0
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -618,7 +618,7 @@ equipments = {
 	modern_tank_destroyer_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
 		priority = 200
-		visual_level = 0
+		visual_level = 2
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -723,7 +723,7 @@ equipments = {
 		parent = light_tank_aa_equipment_1
 		family = light_tank_equipment_2
 		priority = 30
-		visual_level = 1
+		visual_level = 0
 		
 		#Misc Abilities
 		maximum_speed = 12
@@ -817,7 +817,7 @@ equipments = {
 	modern_tank_aa_equipment_1 = {
 		archetype = medium_tank_aa_equipment
 		priority = 190
-		visual_level = 0
+		visual_level = 2
 		
 		#Misc Abilities
 		maximum_speed = 10
