@@ -70,7 +70,6 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		armoured_battalion = { x = 2 y = 0}
 	}
 	#support = {
 	#	armoured_battalion = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)

@@ -1,7 +1,7 @@
 sub_units = {
 
 	armoured_battalion = {
-		sprite = light_armor
+		sprite = "medium_armor"
 		map_icon_category = armored
 		priority = 2502
 		active = yes
