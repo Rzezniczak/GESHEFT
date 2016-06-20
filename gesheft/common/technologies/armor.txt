@@ -8,9 +8,8 @@ technologies = {
 
 		on_research_complete = {
 			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
 				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
+				NOT = {	has_template_containing_unit = armoured_battalion }
 			}
 			hidden_effect = {
 				if = {
@@ -67,9 +66,8 @@ technologies = {
 
 		on_research_complete = {
 			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
 				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
+				NOT = {	has_template_containing_unit = armoured_battalion }
 			}
 			hidden_effect = {
 				if = {
@@ -332,6 +330,10 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_3 
 		}	
+		
+		enable_subunits = {
+			armoured_cavalry
+		}
 		
 		research_cost = 2
 		start_year = 1941
@@ -869,9 +871,9 @@ technologies = {
 
 		on_research_complete = {
 			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = armoured_cavalry }
 				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
+				NOT = {	has_template_containing_unit = armoured_battalion }
 			}
 			hidden_effect = {
 				if = {
