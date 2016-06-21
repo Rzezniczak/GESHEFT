@@ -34,7 +34,6 @@ equipments = {
 
 	light_tank_equipment_3 = {
 		archetype = light_tank_equipment
-		parent = light_tank_equipment_2
 		priority = 10
 		visual_level = 2
 	}
@@ -85,7 +84,6 @@ equipments = {
 
 	light_tank_artillery_equipment_3 = {
 		archetype = light_tank_artillery_equipment
-		parent = light_tank_artillery_equipment_2
 		family = light_tank_equipment_3
 		priority = 20
 		visual_level = 2
@@ -157,7 +155,6 @@ equipments = {
 
 	light_tank_destroyer_equipment_3 = {
 		archetype = light_tank_destroyer_equipment
-		parent = light_tank_destroyer_equipment_2
 		family = light_tank_equipment_3
 		priority = 40
 		visual_level = 2
@@ -228,7 +225,6 @@ equipments = {
 
 	light_tank_aa_equipment_3 = {
 		archetype = light_tank_aa_equipment
-		parent = light_tank_aa_equipment_2
 		family = light_tank_equipment_3
 		priority = 30
 		visual_level = 2
