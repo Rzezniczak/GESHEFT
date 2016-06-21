@@ -108,7 +108,6 @@ equipments = {
 	# 1939
 	medium_tank_equipment_1 = {
 		archetype = medium_tank_equipment
-		parent = light_tank_equipment_2
 		priority = 50
 		visual_level = 0
 		
@@ -206,7 +205,6 @@ equipments = {
 
 	modern_tank_equipment_1 = {
 		archetype = medium_tank_equipment
-		parent = medium_tank_equipment_3
 		priority = 170
 		visual_level = 2
 		
@@ -348,7 +346,6 @@ equipments = {
 
 	medium_tank_artillery_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
-		parent = light_tank_artillery_equipment_2
 		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
@@ -413,8 +410,6 @@ equipments = {
 	
 	modern_tank_artillery_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
-		parent = medium_tank_artillery_equipment_3
-		family = modern_tank_equipment_1
 		priority = 180
 		visual_level = 2
 		
@@ -557,7 +552,6 @@ equipments = {
 
 	medium_tank_destroyer_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
-		parent = light_tank_destroyer_equipment_2
 		family = medium_tank_equipment_1
 		priority = 80
 		visual_level = 0
@@ -623,8 +617,6 @@ equipments = {
 
 	modern_tank_destroyer_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
-		parent = medium_tank_destroyer_equipment_3
-		family = modern_tank_equipment_1
 		priority = 200
 		visual_level = 2
 		
@@ -756,7 +748,6 @@ equipments = {
 
 	medium_tank_aa_equipment_1 = {
 		archetype = medium_tank_aa_equipment
-		parent = light_tank_aa_equipment_2
 		family = medium_tank_equipment_1
 		priority = 70
 		visual_level = 0
@@ -825,8 +816,6 @@ equipments = {
 
 	modern_tank_aa_equipment_1 = {
 		archetype = medium_tank_aa_equipment
-		parent = medium_tank_aa_equipment_3
-		family = modern_tank_equipment_1
 		priority = 190
 		visual_level = 2
 		
