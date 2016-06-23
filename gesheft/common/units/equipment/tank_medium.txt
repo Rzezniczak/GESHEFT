@@ -204,6 +204,7 @@ equipments = {
 		}	
 	}
 
+	# 1945
 	modern_tank_equipment_1 = {
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_3
@@ -237,7 +238,109 @@ equipments = {
 		}
 	}
 	
-	# SPG
+	# 1962
+	modern_tank_equipment_2 = {
+		archetype = medium_tank_equipment
+		parent = modern_tank_equipment_1
+		priority = 170
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 102
+		hardness = 0.98
+		armor_value = 170
+
+		#Offensive Abilities
+		soft_attack = 40
+		hard_attack = 40
+		ap_attack = 171
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 14
+		
+		build_cost_ic = 35
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 6
+		}
+	}
+	
+	# 1974
+	modern_tank_equipment_3 = {
+		archetype = medium_tank_equipment
+		parent = modern_tank_equipment_2
+		priority = 170
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 16
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 120
+		hardness = 0.98
+		armor_value = 210
+
+		#Offensive Abilities
+		soft_attack = 48
+		hard_attack = 46
+		ap_attack = 211
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 16
+		
+		build_cost_ic = 42
+		resources = {
+			oil = 2
+			steel = 6
+			chromium = 6
+		}
+	}
+	
+	# 1980
+	modern_tank_equipment_4 = {
+		archetype = medium_tank_equipment
+		parent = modern_tank_equipment_3
+		priority = 170
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 18
+		breakthrough = 138
+		hardness = 0.98
+		armor_value = 250
+
+		#Offensive Abilities
+		soft_attack = 56
+		hard_attack = 52
+		ap_attack = 251
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 18
+		
+		build_cost_ic = 49
+		resources = {
+			oil = 4
+			steel = 8
+			chromium = 8
+		}
+	}
+	
+	### SPG
 	medium_tank_artillery_equipment = {
 		is_archetype = yes
 		is_buildable = no
@@ -319,9 +422,40 @@ equipments = {
 		}
 	}
 	
-	light_tank_artillery_equipment_2 = {
+	heavy_tank_artillery_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_1
+		family = heavy_tank_equipment_1
+		priority = 100
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 2
+		hardness = 0.7
+		armor_value = 45
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 1
+		ap_attack = 8
+		air_attack = 0
+		
+		build_cost_ic = 25
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
+	
+	light_tank_artillery_equipment_2 = {
+		archetype = medium_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_1
 		family = light_tank_equipment_2
 		priority = 20
 		visual_level = 0
@@ -383,9 +517,36 @@ equipments = {
 		}
 	}
 
-	medium_tank_artillery_equipment_3 = {
+	heavy_tank_artillery_equipment_2 = {
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_2
+		family = heavy_tank_equipment_2
+		priority = 100
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 3
+		armor_value = 68
+
+		#Offensive Abilities 
+		soft_attack = 97
+		hard_attack = 2
+		
+		build_cost_ic = 27
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}
+	
+	medium_tank_artillery_equipment_3 = {
+		archetype = medium_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_2
 		family = medium_tank_equipment_3
 		priority = 60
 		visual_level = 2
@@ -410,10 +571,37 @@ equipments = {
 			oil = 2
 		}
 	}
+
+	heavy_tank_artillery_equipment_3 = {
+		archetype = medium_tank_artillery_equipment
+		parent = medium_tank_artillery_equipment_3
+		family = heavy_tank_equipment_3
+		priority = 100
+		visual_level = 2
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 3.5
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 117
+		hard_attack = 2.5
+		
+		build_cost_ic = 30
+		resources = {
+			oil = 1
+			steel = 5
+			chromium = 3
+		}
+	}
 	
 	modern_tank_artillery_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
-		parent = medium_tank_artillery_equipment_3
+		parent = heavy_tank_artillery_equipment_3
 		family = modern_tank_equipment_1
 		priority = 180
 		visual_level = 2
@@ -423,8 +611,8 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 8
-		breakthrough = 4
+		defense = 22
+		breakthrough = 12
 		hardness = 0.85
 		armor_value = 90
 
@@ -442,8 +630,104 @@ equipments = {
 			chromium = 4
 		}
 	}
+	
+	modern_tank_artillery_equipment_2 = {
+		archetype = medium_tank_artillery_equipment
+		parent = modern_tank_artillery_equipment_1
+		family = modern_tank_equipment_2
+		priority = 180
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
 
-	# TD
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 18
+		hardness = 0.9
+		armor_value = 120
+
+		#Offensive Abilities
+		soft_attack = 128
+		hard_attack = 5
+		ap_attack = 20
+		air_attack = 0
+
+		build_cost_ic = 32
+		
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 4
+		}
+	}
+	
+	modern_tank_artillery_equipment_3 = {
+		archetype = medium_tank_artillery_equipment
+		parent = modern_tank_artillery_equipment_2
+		family = modern_tank_equipment_3
+		priority = 180
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 16
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 38
+		breakthrough = 24
+		hardness = 0.9
+		armor_value = 160
+
+		#Offensive Abilities
+		soft_attack = 136
+		hard_attack = 8
+		ap_attack = 40
+		air_attack = 0
+
+		build_cost_ic = 35
+		
+		resources = {
+			oil = 1
+			steel = 6
+			chromium = 4
+		}
+	}
+	
+	modern_tank_artillery_equipment_4 = {
+		archetype = medium_tank_artillery_equipment
+		parent = modern_tank_artillery_equipment_3
+		family = modern_tank_equipment_4
+		priority = 180
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 46
+		breakthrough = 30
+		hardness = 0.9
+		armor_value = 200
+
+		#Offensive Abilities
+		soft_attack = 144
+		hard_attack = 12
+		ap_attack = 80
+		air_attack = 0
+
+		build_cost_ic = 42
+		
+		resources = {
+			oil = 2
+			steel = 6
+			chromium = 4
+		}
+	}
+
+	### TD
 	medium_tank_destroyer_equipment = {
 		is_archetype = yes
 		is_buildable = no
@@ -526,9 +810,40 @@ equipments = {
 				
 	}
 
-	light_tank_destroyer_equipment_2 = {
+	heavy_tank_destroyer_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_1
+		family = heavy_tank_equipment_1
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 1
+		hardness = 0.9
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 25
+		ap_attack = 96
+		air_attack = 0
+		
+		build_cost_ic = 25
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
+	
+	light_tank_destroyer_equipment_2 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_1
 		family = light_tank_equipment_2
 		priority = 40
 		visual_level = 0
@@ -592,9 +907,38 @@ equipments = {
 		}		
 	}
 
-	medium_tank_destroyer_equipment_3 = {
+	heavy_tank_destroyer_equipment_2 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_2
+		family = heavy_tank_equipment_2
+		priority = 120
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 1.5
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 42
+		ap_attack = 140
+		air_attack = 0
+		
+		build_cost_ic = 27
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}	
+	
+	medium_tank_destroyer_equipment_3 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_2
 		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
@@ -621,9 +965,38 @@ equipments = {
 		}
 	}
 
-	modern_tank_destroyer_equipment_1 = {
+	heavy_tank_destroyer_equipment_3 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_3
+		family = heavy_tank_equipment_3
+		priority = 120
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 1.8
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 60
+		ap_attack = 160
+		air_attack = 0
+		
+		build_cost_ic = 30
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 4
+		}
+	}	
+	
+	modern_tank_destroyer_equipment_1 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_3
 		family = modern_tank_equipment_1
 		priority = 200
 		visual_level = 2
@@ -649,6 +1022,99 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 4
+		}
+	}
+	
+	modern_tank_destroyer_equipment_2 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = modern_tank_destroyer_equipment_1
+		family = modern_tank_equipment_2
+		priority = 200
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 2.2
+		hardness = 0.98
+		armor_value = 170
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 52
+		ap_attack = 210
+		air_attack = 0
+	
+		build_cost_ic = 32
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 4
+		}
+	}
+	
+	modern_tank_destroyer_equipment_3 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = modern_tank_destroyer_equipment_2
+		family = modern_tank_equipment_3
+		priority = 200
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 16
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 2.4
+		hardness = 0.98
+		armor_value = 210
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 62
+		ap_attack = 255
+		air_attack = 0
+	
+		build_cost_ic = 35
+		resources = {
+			oil = 2
+			steel = 6
+			chromium = 4
+		}
+	}
+	
+	modern_tank_destroyer_equipment_4 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = modern_tank_destroyer_equipment_3
+		family = modern_tank_equipment_4
+		priority = 200
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 11
+		breakthrough = 2.6
+		hardness = 0.98
+		armor_value = 250
+
+		#Offensive Abilities
+		soft_attack = 16
+		hard_attack = 72
+		ap_attack = 300
+		air_attack = 0
+	
+		build_cost_ic = 42
+		resources = {
+			oil = 2
+			steel = 6
+			chromium = 6
 		}
 	}
 	
@@ -726,9 +1192,40 @@ equipments = {
 		}
 	}
 
+	heavy_tank_aa_equipment_1 = {
+		archetype = medium_tank_aa_equipment
+		parent = light_tank_aa_equipment
+		family = heavy_tank_equipment_1
+		priority = 110
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 2
+		breakthrough = 2
+		hardness = 0.7
+		armor_value = 45
+
+		#Offensive Abilities
+		soft_attack = 4.5
+		hard_attack = 4
+		ap_attack = 25
+		air_attack = 17
+		
+		build_cost_ic = 25
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
+	
 	light_tank_aa_equipment_2 = {
 		archetype = medium_tank_aa_equipment
-		parent = light_tank_aa_equipment_1
+		parent = heavy_tank_aa_equipment_1
 		family = light_tank_equipment_2
 		priority = 30
 		visual_level = 0
@@ -793,9 +1290,38 @@ equipments = {
 		}
 	}
 
-	medium_tank_aa_equipment_3 = {
+	heavy_tank_aa_equipment_2 = {
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_2
+		family = heavy_tank_equipment_2
+		priority = 110
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 3
+		breakthrough = 3
+		armor_value = 68
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 4.5
+		ap_attack = 60
+		air_attack = 33
+		
+		build_cost_ic = 27
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
+	
+	medium_tank_aa_equipment_3 = {
+		archetype = medium_tank_aa_equipment
+		parent = heavy_tank_aa_equipment_2
 		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
@@ -823,9 +1349,40 @@ equipments = {
 		}		
 	}
 
-	modern_tank_aa_equipment_1 = {
+	heavy_tank_aa_equipment_3 = {
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_3
+		family = heavy_tank_equipment_3
+		priority = 110
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+
+		
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 7.5
+		hard_attack = 6
+		ap_attack = 88
+		air_attack = 44
+		
+		build_cost_ic = 30
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}
+	
+	modern_tank_aa_equipment_1 = {
+		archetype = medium_tank_aa_equipment
+		parent = heavy_tank_aa_equipment_3
 		family = modern_tank_equipment_1
 		priority = 190
 		visual_level = 2
@@ -852,6 +1409,102 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 4
+		}
+	}
+	
+	modern_tank_aa_equipment_2 = {
+		archetype = medium_tank_aa_equipment
+		parent = modern_tank_aa_equipment_1
+		family = modern_tank_equipment_2
+		priority = 190
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 4.5
+		breakthrough = 4.5
+		hardness = 0.85
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 10.5
+		hard_attack = 9
+		ap_attack = 130
+		air_attack = 58
+		
+		build_cost_ic = 35
+		
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 4
+		}
+	}
+	
+	modern_tank_aa_equipment_3 = {
+		archetype = medium_tank_aa_equipment
+		parent = modern_tank_aa_equipment_2
+		family = modern_tank_equipment_3
+		priority = 190
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 16
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 5
+		hardness = 0.85
+		armor_value = 160
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 10.5
+		ap_attack = 170
+		air_attack = 70
+		
+		build_cost_ic = 42
+		
+		resources = {
+			oil = 2
+			steel = 6
+			chromium = 4
+		}
+	}
+	
+	modern_tank_aa_equipment_4 = {
+		archetype = medium_tank_aa_equipment
+		parent = modern_tank_aa_equipment_3
+		family = modern_tank_equipment_4
+		priority = 190
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 5.5
+		breakthrough = 5.5
+		hardness = 0.85
+		armor_value = 190
+
+		#Offensive Abilities
+		soft_attack = 13.5
+		hard_attack = 12
+		ap_attack = 200
+		air_attack = 90
+		
+		build_cost_ic = 49
+		
+		resources = {
+			oil = 2
+			steel = 6
+			chromium = 6
 		}
 	}
 }

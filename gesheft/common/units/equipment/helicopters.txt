@@ -1,0 +1,48 @@
+# All equipment based on attack helicopter chassis
+
+equipments = {
+
+	transport_helicopter_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+
+		#Misc Abilities
+		maximum_speed = 50
+		reliability = 0.8
+
+		#Defensive Abilities
+		hardness = 0.7
+		armor_value = 40
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 20
+		resources = {
+			oil = 1
+			aluminium = 4
+			chromium = 3
+		}
+	}
+
+	# 1960
+	transport_helicopter_equipment_1 = {
+		archetype = attack_helicopter_equipment
+		priority = 15
+		visual_level = 0
+	}
+}
