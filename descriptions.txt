@@ -1,0 +1,28 @@
+GIN:
+
+GESHEFT (Grand Expansion of Ships, Historical Equipment, Focuses and Technologies) - is a project to improve the realism in HOI 4, starting with icons and names of the equipment and (WIP) by expanding the tech tree and focus tree through the timeline (to 1980s) as well as in complexity (introducing new equipment and reshuffling existing one).
+
+Currently not Ironman compatible.
+
+Features:
+
+Infantry tab:
+- Truck names: all majors
+- APCs names: all majors
+
+Artillery tab:
+- Artillery names: all majors
+- AA gun names: all majors
+- AT gun names: all majors
+
+Armor tab:
+- Historical SPG/TD/SPAAG names: USSR, USA
+- Historical icons: USSR
+- Tech tree renames: USSR
+
+Air tab:
+- Soviet heavy and carrier planes remade
+
+Naval tab:
+- Unique icons: USSR
+- Historical names: USSR
