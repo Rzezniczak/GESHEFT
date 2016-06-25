@@ -41,7 +41,7 @@ equipments = {
 
 	# 1960
 	transport_helicopter_equipment_1 = {
-		archetype = attack_helicopter_equipment
+		archetype = transport_helicopter_equipment
 		priority = 15
 		visual_level = 0
 	}

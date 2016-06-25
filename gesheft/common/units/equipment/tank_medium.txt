@@ -1194,7 +1194,7 @@ equipments = {
 
 	heavy_tank_aa_equipment_1 = {
 		archetype = medium_tank_aa_equipment
-		parent = light_tank_aa_equipment
+		parent = light_tank_aa_equipment_1
 		family = heavy_tank_equipment_1
 		priority = 110
 		visual_level = 0

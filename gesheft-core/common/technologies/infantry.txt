@@ -22,7 +22,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_0
-			infantry_at_equipment_0
 		}
 		
 		enable_subunits = {
@@ -187,8 +186,9 @@ technologies = {
 	
 	infantry_at = {
 
-		enable_equipments = {
-			infantry_at_equipment_1
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -214,8 +214,9 @@ technologies = {
 	
 	infantry_at2 = {
 
-		enable_equipments = {
-			infantry_at_equipment_2
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		research_cost = 1.5
@@ -1077,7 +1078,7 @@ technologies = {
 			factor = 1
 		}
 	}
-
+	
 	mechanised_infantry4 = {
 
 		enable_equipments = {

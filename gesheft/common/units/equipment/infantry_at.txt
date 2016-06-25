@@ -28,7 +28,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 1
 		hard_attack = 1
-		ap_attack = 3
+		ap_attack = 5
 		air_attack = 0
 
 		#Space taken in convoy
@@ -48,18 +48,17 @@ equipments = {
 		visual_level = 0
 	}
 
-
-
 	infantry_at_equipment_1 = {
 		archetype = infantry_at_equipment
 		parent = infantry_at_equipment_0
 		priority = 10
 		visual_level = 1
 
-
+		defense = 12
+		
 		#Offensive Abilities
 		hard_attack = 3
-		ap_attack = 8
+		ap_attack = 61
 
 		build_cost_ic = 0.5
 		resources = {
@@ -68,20 +67,53 @@ equipments = {
 	}
 
 	infantry_at_equipment_2 = {
-		archetype = infantry_equipment
-		parent = infantry_equipment_1
+		archetype = infantry_at_equipment
+		parent = infantry_at_equipment_1
 		priority = 10
 		visual_level = 2
 		
 		#Offensive Abilities
 		soft_attack = 2
-		hard_attack = 5
-		ap_attack = 14
+		hard_attack = 6
+		ap_attack = 81
 		air_attack = 0
 		
 		build_cost_ic = 0.75
 		resources = {
 			tungsten = 2
+		}
+	}
+	
+	infantry_at_equipment_3 = {
+		archetype = infantry_at_equipment
+		parent = infantry_at_equipment_2
+		priority = 10
+		visual_level = 2
+		
+		#Offensive Abilities
+		soft_attack = 4
+		hard_attack = 9
+		ap_attack = 131
+		
+		build_cost_ic = 1.0
+		resources = {
+			tungsten = 4
+		}
+	}
+	
+	infantry_at_equipment_4 = {
+		archetype = infantry_at_equipment
+		parent = infantry_at_equipment_3
+		priority = 10
+		visual_level = 2
+		
+		#Offensive Abilities
+		hard_attack = 12
+		ap_attack = 211
+		
+		build_cost_ic = 1.25
+		resources = {
+			tungsten = 6
 		}
 	}
 }
