@@ -1,8 +1,11 @@
-GIN:
+### GIN:
 
 GESHEFT (Grand Expansion of Ships, Historical Equipment, Focuses and Technologies) - is a project to improve the realism in HOI 4, starting with icons and names of the equipment and (WIP) by expanding the tech tree and focus tree through the timeline (to 1980s) as well as in complexity (introducing new equipment and reshuffling existing one). 
 
 Currently not Ironman compatible. 
+
+This is the graphical improvement mod, check out the core mod, which adds new equipment and techs:
+http://steamcommunity.com/sharedfiles/filedetails/?id=711292579
 
 DEVELOPMENT HELP WELCOME 
 
@@ -29,3 +32,48 @@ Air tab:
 Naval tab: 
 - Unique icons: USSR 
 - Historical names: USSR
+
+### CORE:
+
+GESHEFT (Grand Expansion of Ships, Historical Equipment, Focuses and Technologies) - is a project to improve the realism in HOI 4, starting with icons and names of the equipment and (WIP) by expanding the tech tree and focus tree through the timeline (to 1980s) as well as in complexity (introducing new equipment and reshuffling existing one). 
+
+This is the core mode, it contains a custom equipment/techtree and custom units. 
+This mod requires GESHEFT Graphical Interfface and Names to work! 
+http://steamcommunity.com/workshop/filedetails/?id=710463478 
+
+Also check out focus improvement mod: 
+
+Note that this mode is WIP and will be updated step by step. 
+
+DEVELOPMENT HELP WELCOME 
+
+Features: 
+
+Infantry: 
+- Expanded infantry equipment branch: 3 more rifles! 
+- Expanded motorized and mechanized equipment: now motorized units get APCs/BTRs and mechanized get IFVs/BMPs 
+- Tweaked and expanded night vision branch 
+- Expanded AT infantry weapons branch 
+- Tweaked special infantry branches 
+
+Armor: 
+- Modern light tank equipment added 
+- 3 more MBTs and sub equipment, up to 1980 
+
+Support, Artillery, Air, Naval, Industry, Engineering tabs yet untouched
+
+### Focuses
+
+GESHEFT (Grand Expansion of Ships, Historical Equipment, Focuses and Technologies) - is a project to improve the realism in HOI 4, starting with icons and names of the equipment and (WIP) by expanding the tech tree and focus tree through the timeline (to 1980s) as well as in complexity (introducing new equipment and reshuffling existing one). 
+
+This is a mod that is a part of GESHEFT list of modes and expands focuses and ideas
+
+Check out the other two mods that are included in the pack:
+GESHEFT Graphical pack: http://steamcommunity.com/workshop/filedetails/?id=710463478 
+GESHEFT Core mod (Techtree Expansion): http://steamcommunity.com/sharedfiles/filedetails/?id=711292579
+
+DEVELOPMENT HELP WELCOME 
+
+Features:
+- Expanded Soviet industrial focuses up to 1950s with bits from third and fourth Five Year Plans
+- Adds a new military theoritist for USSR: Boris Shtemenko, giving bonuses for Superior Firepower research for USSR
