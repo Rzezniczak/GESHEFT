@@ -1,0 +1,108 @@
+equipments = {
+
+	heavy_tank_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 36
+		hardness = 0.9
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 12
+		ap_attack = 35
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 14
+		
+		build_cost_ic = 25 
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 3
+		}
+		
+	}
+
+	# 1934
+	heavy_tank_equipment_1 = {
+		archetype = heavy_tank_equipment		
+		priority = 90
+		visual_level = 0
+	}
+
+	# 1941
+	heavy_tank_equipment_2 = {
+		archetype = heavy_tank_equipment
+		parent = heavy_tank_equipment_1
+		priority = 90
+		visual_level = 1
+		
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 52
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 22
+		hard_attack = 30
+		ap_attack = 111
+		
+		build_cost_ic = 27 
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
+
+	# 1943
+	heavy_tank_equipment_3 = {
+		archetype = heavy_tank_equipment
+		parent = heavy_tank_equipment_2
+		priority = 90
+		visual_level = 2
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 67
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 28
+		hard_attack = 40
+		ap_attack = 131
+		
+		build_cost_ic = 30
+		resources = {
+			oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}
+}

@@ -11,6 +11,12 @@ technologies = {
 	@1944 = 16
 	@1945 = 18
 	@1946 = 20
+	@1950 = 22
+	@1960 = 24
+	@1975 = 26
+	@1985 = 28
+	@1990 = 30
+	@1995 = 32
 
 	infantry_weapons = {
 
@@ -32,7 +38,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 4 y = @1918 }
 		}
 		
 		categories = {
@@ -59,7 +65,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 4 y = @1936 }
 		}
 		
 		categories = {
@@ -98,7 +104,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1938 }
+			position = { x = 4 y = @1938 }
 		}
 		
 		categories = {
@@ -129,7 +135,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 4 y = @1939 }
 		}
 		
 		categories = {
@@ -167,7 +173,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1940 }
+			position = { x = 4 y = @1940 }
 		}
 		
 		categories = {
@@ -181,11 +187,6 @@ technologies = {
 	
 	infantry_at = {
 
-		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
-		}
-		
 		enable_equipments = {
 			infantry_at_equipment_1
 		}
@@ -199,7 +200,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1942 }
+			position = { x = 7 y = @1942 }
 		}
 		
 		categories = {
@@ -213,11 +214,6 @@ technologies = {
 	
 	infantry_at2 = {
 
-		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
-		}
-		
 		enable_equipments = {
 			infantry_at_equipment_2
 		}
@@ -226,7 +222,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 15 }
+			position = { x = 7 y = @1943 }
 		}
 		
 		categories = {
@@ -253,7 +249,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 4 y = @1942 }
 		}
 		
 		categories = {
@@ -267,6 +263,11 @@ technologies = {
 	
 	advanced_infantry_weapons2 = {
 
+		path = {
+			leads_to_tech = modern_infantry_weapons
+			research_cost_coeff = 1
+		}
+	
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
@@ -286,7 +287,83 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1944 }
+			position = { x = 4 y = @1944 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	modern_infantry_weapons = {
+
+		enable_equipments = {
+			infantry_equipment_4
+		}	
+		
+		path = {
+			leads_to_tech = modern_infantry_weapons_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1950 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	modern_infantry_weapons_2 = {
+
+		enable_equipments = {
+			infantry_equipment_5
+		}	
+		
+		path = {
+			leads_to_tech = modern_infantry_weapons_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1960 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	modern_infantry_weapons_3 = {
+
+		enable_equipments = {
+			infantry_equipment_6
+		}	
+		
+		research_cost = 2
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1975 }
 		}
 		
 		categories = {
@@ -313,7 +390,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 19 y = @1936 }
 		}
 		
 		on_research_complete = {
@@ -353,7 +430,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 19 y = @1939 }
 		}
 		
 		categories = {
@@ -376,7 +453,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1943 }
+			position = { x = 19 y = @1943 }
 		}
 		
 		categories = {
@@ -412,10 +489,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 20 y = @1918 }
 		}
 		
 		categories = {
@@ -440,10 +517,10 @@ technologies = {
 		
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 20 y = @1938 }
 		}
 		
 		categories = {
@@ -458,10 +535,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1943 }
+			position = { x = 20 y = @1942 }
 		}
 		
 		categories = {
@@ -493,10 +570,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 18 y = @1918 }
 		}
 		
 		categories = {
@@ -521,10 +598,10 @@ technologies = {
 
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 18 y = @1938 }
 		}
 		
 		categories = {
@@ -543,10 +620,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1943 }
+			position = { x = 18 y = @1942 }
 		}
 		
 		categories = {
@@ -560,7 +637,7 @@ technologies = {
 	
 	night_vision = {
 
-		land_night_attack = 0.1
+		land_night_attack = 0.05
 		
 		path = {
 			leads_to_tech = night_vision2
@@ -571,7 +648,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1943 }
+			position = { x = 2 y = @1943 }
 		}
 		
 		categories = {
@@ -585,13 +662,38 @@ technologies = {
 	
 	night_vision2 = {
 
-		land_night_attack = 0.15	
+		land_night_attack = 0.1	
+		
+		path = {
+			leads_to_tech = night_vision3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1946
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1946 }
+			position = { x = 2 y = @1946 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	night_vision3 = {
+
+		land_night_attack = 0.15	
+
+		research_cost = 2
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1975 }
 		}
 		
 		categories = {
@@ -643,7 +745,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1918 }
+			position = { x = 2 y = @1918 }
 		}
 		
 		categories = {
@@ -695,7 +797,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1938 }
+			position = { x = 2 y = @1938 }
 		}
 		
 		categories = {
@@ -747,7 +849,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1940 }
+			position = { x = 2 y = @1940 }
 		}
 		
 		categories = {
@@ -794,7 +896,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 2 y = @1942 }
 		}
 		
 		categories = {
@@ -833,11 +935,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = motorised_infantry2
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 10 y = @1936 }
 		}
 		
 		folder = {
@@ -894,7 +1001,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1941 }
+			position = { x = 14 y = @1941 }
 		}
 		
 		categories = {
@@ -923,7 +1030,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1943 }
+			position = { x = 14 y = @1943 }
 		}
 		
 		categories = {
@@ -948,11 +1055,16 @@ technologies = {
 			hard_attack = 0.15
 		}
 
+		path = {
+			leads_to_tech = mechanised_infantry4
+			research_cost_coeff = 1
+		}		
+		
 		research_cost = 3
 		start_year = 1945
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1945 }
+			position = { x = 14 y = @1945 }
 		}
 		
 		categories = {
@@ -963,6 +1075,230 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	mechanised_infantry4 = {
+
+		enable_equipments = {
+			mechanized_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1950 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	mechanised_infantry5 = {
+
+		enable_equipments = {
+			mechanized_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1975 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	mechanised_infantry6 = {
+
+		enable_equipments = {
+			mechanized_equipment_6
+		}
+
+		research_cost = 2
+		start_year = 1985
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1985 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	motorised_infantry2 = {
+
+		enable_equipments = {
+			motorized_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = motorised_infantry3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1950 }
+		}
+		
+		sub_technologies = {
+			motorized_rocket_unit2
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	motorized_rocket_unit2 = {
+
+		enable_equipments = {
+			motorized_rocket_equipment_2
+		}
+	
+		research_cost = 1.5
+		start_year = 1950
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			mot_rockets
+		}
+	}
+
+	motorised_infantry3 = {
+
+		enable_equipments = {
+			motorized_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = motorised_infantry4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1960 }
+		}
+		
+		sub_technologies = {
+			motorized_rocket_unit3
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	motorized_rocket_unit3 = {
+
+		enable_equipments = {
+			motorized_rocket_equipment_3
+		}
+	
+		research_cost = 1.5
+		start_year = 1960
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			mot_rockets
+		}
+	}
+
+	motorised_infantry4 = {
+
+		enable_equipments = {
+			motorized_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1985
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = @1985 }
+		}
+		
+		sub_technologies = {
+			motorized_rocket_unit4
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	motorized_rocket_unit4 = {
+
+		enable_equipments = {
+			motorized_rocket_equipment_4
+		}
+	
+		research_cost = 1.5
+		start_year = 1980
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			mot_rockets
 		}
 	}
 }
